@@ -79,6 +79,9 @@ public final class PictureOpenCamera {
 
     /**
      * multiple choice photo
+     *
+     * @param selectedList  Already selected List
+     * @param call
      */
     public void openMultipleActivityCamera(List<LocalMedia> selectedList, OnResultCallbackListener<LocalMedia> call) {
         PictureSelector.create(selector.getActivity())
@@ -101,7 +104,7 @@ public final class PictureOpenCamera {
                 .isDirectReturnSingle(false)
                 .setMaxSelectNum(3)
                 .isGif(false)
-                .setSelectedData(selectedList)
+                .setSelectedData(selectedList != null ? selectedList : new ArrayList<>())
                 .forResult(call);
     }
 
