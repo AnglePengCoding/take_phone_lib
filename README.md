@@ -1,7 +1,6 @@
 # take_phone_lib
 <h2>介绍</h2>
 
-```
 [![](https://jitpack.io/v/AnglePengCoding/take_phone_lib.svg)](https://jitpack.io/#AnglePengCoding/take_phone_lib)
 
 <h3> Step 2. Add the dependency 以最新版本为准 </h3>
