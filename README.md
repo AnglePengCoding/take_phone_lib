@@ -1,5 +1,6 @@
 # take_phone_lib
 <h2>介绍</h2>
+<h3>相册上传，支持单传，多传，指定类型传/resultCode的小lib  </h3>
 
 [![](https://jitpack.io/v/AnglePengCoding/take_phone_lib.svg)](https://jitpack.io/#AnglePengCoding/take_phone_lib)
 
@@ -9,7 +10,6 @@
   implementation 'com.github.AnglePengCoding:take_phone_lib:Tag'
 ```
 
-<h3>相册上传，支持单传，多传，指定类型传/resultCode的小lib  </h3>
 
 <h4> 单传图片 </h4>
 
