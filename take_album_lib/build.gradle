@@ -1,7 +1,12 @@
 plugins {
     id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
     id 'maven-publish'
 }
+
+group = 'com.github.jitpack'
+version = '1.0'
+
 android {
     compileSdk 32
 
@@ -34,4 +39,18 @@ dependencies {
     api 'io.github.lucksiege:pictureselector:v3.0.5'
     api 'com.github.bumptech.glide:glide:4.13.0'
     api 'io.github.lucksiege:compress:v3.0.5'
+
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.anglepengcoding.take_album_lib' //groupId 随便取
+                artifactId = 'take_album_lib'  //artifactId 随便取
+                version = '1.0'
+            }
+        }
+    }
 }
